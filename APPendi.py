@@ -2,7 +2,7 @@
 
 import streamlit as st
 from PIL import Image
-st.title("Centro Medico payasos Siglo XXI")
+st.title("Centro Medico Hola amor Siglo XXI")
 st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
 #Escribir palabras simples sin formato
 #poner un boton
