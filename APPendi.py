@@ -2,6 +2,8 @@
 
 import streamlit as st
 from PIL import Image
+
+st.image("https://github.com/mdfnunez/APPendi/blob/main/APPendi.jpg")
 st.title("Centro Medico Hola amor Siglo XXI")
 st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
 #Escribir palabras simples sin formato
@@ -9,7 +11,6 @@ st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
 #st.button("A")
 #Barra lateral, se puede colocar checkbox, texto, slider, etc.
 
-st.image("https://github.com/mdfnunez/APPendi/blob/main/APPendi.jpg")
 
 #BARRA LATERAL
 st.subheader("Panel de busqueda y registro")
