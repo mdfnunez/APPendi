@@ -4,8 +4,8 @@ from openpyxl import Workbook
 # #APPendi: para la comparacion del registro electronico vs juicio clinico en el diagnostico correcto de apendicitis aguda
 import streamlit as st
 from PIL import Image
-#st.image("https://github.com/mdfnunez/APPendi/blob/main/APPendi.jpg?raw=true")
-#st.image("https://github.com/mdfnunez/APPendi/blob/main/Especialidades.jpg?raw=true"
+st.image("https://github.com/mdfnunez/APPendi/blob/main/APPendi.jpg?raw=true")
+st.image("https://github.com/mdfnunez/APPendi/blob/main/Especialidades.jpg?raw=true")
 st.image("APPendi.jpg")
 st.title("Centro Médico Nacional Siglo XXI")
 st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
