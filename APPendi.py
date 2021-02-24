@@ -2,7 +2,7 @@
 
 import streamlit as st
 from PIL import Image
-st.title("Centro Payasos Nacionales Siglo XXI")
+st.title("Centro Medico Nacional Siglo XXI")
 st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
 #Escribir palabras simples sin formato
 #poner un boton
@@ -12,18 +12,18 @@ st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
 
 
 #BARRA LATERAL
-st.sidebar.subheader("Panel de busqueda y registro")
-buscarpaciente = st.sidebar.button("Busqueda de paciente")
+st.subheader("Panel de busqueda y registro")
+buscarpaciente = st.button("Busqueda de paciente")
 if buscarpaciente:
-    filename=st.sidebar.text_input("Ingresa numero de seguridad social (NSS)")
+    filename=st.text_input("Ingresa numero de seguridad social (NSS)")
     try:
         with open(filename+".txt") as input:
             st.text(input.read())
     except:
         st.write("Paciente no encontrado")
-Botonregistro=st.sidebar.button("Nuevo registro")
+Botonregistro=st.button("Nuevo registro")
 if Botonregistro:
-    st.sidebar.write("")
+    st.write("")
     st.subheader("Favor de contestar las siguientes preguntas sin ayuda de nadie")
 
     Nombreregistro=st.text_input("Nombre completo")
