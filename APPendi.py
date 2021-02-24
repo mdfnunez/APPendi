@@ -2,7 +2,7 @@
 import streamlit as st
 from PIL import Image
 st.image("https://github.com/mdfnunez/APPendi/blob/main/APPendi.jpg?raw=true")
-st.image("https://github.com/mdfnunez/APPendi/blob/main/Especialidades.jpg?raw=true"
+st.image("https://github.com/mdfnunez/APPendi/blob/main/Especialidades.jpg?raw=true")
 st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
 st.write("")
 st.subheader("Registro de nuevo paciente")
