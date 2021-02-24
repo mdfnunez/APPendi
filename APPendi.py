@@ -9,7 +9,7 @@ st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
 #st.button("A")
 #Barra lateral, se puede colocar checkbox, texto, slider, etc.
 
-
+st.image(Especialidades.jpg)
 
 #BARRA LATERAL
 st.subheader("Panel de busqueda y registro")
