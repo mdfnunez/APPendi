@@ -3,7 +3,7 @@
 import streamlit as st
 from PIL import Image
 
-st.image("https://github.com/mdfnunez/APPendi/blob/main/APPendi.jpg")
+st.image("APPendi/APPendi.jpg")
 st.title("Centro Medico Hola amor Siglo XXI")
 st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
 #Escribir palabras simples sin formato
