@@ -2,7 +2,6 @@
 import streamlit as st
 from PIL import Image
 st.image("https://github.com/mdfnunez/APPendi/blob/main/APPendi.jpg?raw=true")
-st.image("https://github.com/mdfnunez/APPendi/blob/main/Especialidades.jpg?raw=true")
 st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
 st.write("")
 st.subheader("Registro de nuevo paciente")
@@ -11,4 +10,4 @@ Edad=st.number_input("Edad")
 fechanac=st.date_input("Fecha de nacimiento")
 Nss=st.number_input("Numero de seguridad social")
 Genero=st.text_input("Genero")
-guardar=open
+st.image("https://github.com/mdfnunez/APPendi/blob/main/Especialidades.jpg?raw=true")
