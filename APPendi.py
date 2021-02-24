@@ -2,7 +2,6 @@
 
 import streamlit as st
 from PIL import Image
-st.image("APPendi.jpg")
 st.title("Centro Médico Nacional Siglo XXI")
 st.subheader("Protocolo de estudio de pacientes con apendicitis aguda, IMSS")
 #Escribir palabras simples sin formato
@@ -45,5 +44,3 @@ if Botonregistro:
         anorexia = st.checkbox("Ha tenido falta de apetito en las ultimas 24 hrs")
         vomito = st.checkbox("Ha vomitado o presentado nausea en las ultimas 24 hrs")
 
-imagen = Image.open("Especialidades.jpg")
-st.sidebar.image(imagen)
