@@ -1,5 +1,7 @@
 import sqlite3
 import pandas
+import streamlit as st
+st.write("Bienvenidos")
 print("Bienvenido, iniciemos "
       ""
       ""
