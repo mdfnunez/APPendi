@@ -24,9 +24,9 @@ def nuevatabla():
 
 #### agregar datos a la base de datos
 try:
-      NSS=st.text_input("Numero de seguridad social: "))
+      NSS=st.text_input("Numero de seguridad social: ")
       Nombre=st.text_input("Nombre del paciente: ")
-      Edad=st.text_input("Edad del paciente"))
+      Edad=st.text_input("Edad del paciente")
 
       c.execute("INSERT INTO pa(NSS,Nombre,Edad)VALUES (?,?,?)""", (NSS,Nombre,Edad))
 
