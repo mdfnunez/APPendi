@@ -2,7 +2,7 @@ import sqlite3
 import streamlit as st
 
 st.title("Bienvenido")
-st.image("https://github.com/mdfnunez/APPendi/blob/main/APPendi.jpg")
+st.image("APPendi.jpg")
 c=sqlite3.connect("Omega.db")
 con=c.cursor()
 creartabla=c.execute("""CREATE TABLE IF NOT EXISTS Theta(
