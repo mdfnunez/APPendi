@@ -5,7 +5,7 @@ st.title("Bienvenido")
 st.image("APPendi.jpg")
 c=sqlite3.connect("Omega.db")
 con=c.cursor()
-creartabla=c.execute("""CREATE TABLE IF NOT EXISTS Theta(
+creartabla=c.execute("""CREATE TABLE IF NOT EXISTS DATABASE_URL(
 Nombre TEXT,
 Edad INTEGER,
 PeliculaFavorita TEXT)""")
