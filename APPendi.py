@@ -16,7 +16,7 @@ Edad=st.number_input("Edad: ")
 Pelifav=st.text_input("Pelicula favorita")
 Aplicar=st.button("Salvar cambios")
 if Aplicar==True:
-    c.execute("INSERT INTO "https://github.com/mdfnunez/APPendi/blob/c42f76b7ede35253df08faff037643e86ed00f5d/Omega.db"(Nombre,Edad,Peliculafavorita)VALUES (?,?,?)""", (Nombre, Edad, Pelifav))
+    c.execute("INSERT INTO theta(Nombre,Edad,Peliculafavorita)VALUES (?,?,?)""", (Nombre, Edad, Pelifav))
     c.commit()
     c.close()
 
