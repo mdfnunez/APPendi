@@ -1,23 +1,38 @@
 import sqlite3
 import streamlit as st
 
-st.title("Bienvenido")
-st.image("APPendi.jpg")
-c=sqlite3.connect("Omega.db")
-con=c.cursor()
-creartabla=c.execute("""CREATE TABLE IF NOT EXISTS DATABASE_URL(
-Nombre TEXT,
-Edad INTEGER,
-PeliculaFavorita TEXT)""")
-c.commit()
-st.cache()
+st.sidebar.image("/home/alonso/Escritorio/Programas/CMNXXI.jpg",None,300,350)
+st.sidebar.title("Centro Medico Nacional Siglo XXI")
+st.sidebar.subheader("Hospital de especialidades")
+
+#Agregar logo de la app
+#Agregar logo para cada seleccion en el sidebar
+#crear tabla y agregar columnas
+db=sqlite3.connect("Alpha.db")
+c=db.cursor()
+c.execute("""
+CREATE TABLE IF NOT EXISTS pac(
+NSS INT PRIMARY KEY NOT NULL,
+Nombre TEXT NOT NULL
+)""")
+db.commit()
+NSS=st.number_input("NSS: ",1,None,1,1)
 Nombre=st.text_input("Nombre: ")
-Edad=st.number_input("Edad: ")
-Pelifav=st.text_input("Pelicula favorita")
-Aplicar=st.button("Salvar cambios")
-if Aplicar==True:
-    c.execute("INSERT INTO theta(Nombre,Edad,Peliculafavorita)VALUES (?,?,?)""", (Nombre, Edad, Pelifav))
-    c.commit()
-    c.close()
+Registrar=st.button("Registrar")
+if Registrar == True:
+    c.execute('INSERT INTO pac VALUES(?,?)',(NSS,Nombre))
+    db.commit()
+    db.close()
+    st.text("Se agregaron los datos")
 
+#Ver datos imprime los datos despues de presionar el boton
+verdatos=st.button("Ver registro")
+if verdatos==True:
+    VER=c.execute("SELECT * FROM pac")
 
+    rows = c.fetchall()
+
+    for row in rows:
+        st.text(row)
+#Sidebar
+st.sidebar.selectbox("Selecciona",("Registro de paciente","Nota de ingreso","Nota de evolucion","Indicaciones"))
