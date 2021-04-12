@@ -1,7 +1,7 @@
 import sqlite3
 import streamlit as st
 
-st.sidebar.image("https://github.com/mdfnunez/APPendi/blob/main/CMNXXI.jpg",None,300,350)
+st.sidebar.image("CMNXXI.jpg",None,300,350)
 st.sidebar.title("Centro Medico Nacional Siglo XXI")
 st.sidebar.subheader("Hospital de especialidades")
 
